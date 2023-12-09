@@ -20,6 +20,8 @@
 		87A758CC2B244DB000CEC20C /* links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CB2B244DB000CEC20C /* links.swift */; };
 		87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CD2B24583A00CEC20C /* CellarViewController.swift */; };
 		87C9E8252B24FDAA0024FE4F /* WineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8242B24FDAA0024FE4F /* WineModel.swift */; };
+		87C9E8272B24FFB00024FE4F /* WineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8262B24FFB00024FE4F /* WineService.swift */; };
+		87C9E8292B2502420024FE4F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8282B2502420024FE4F /* ErrorHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		87A758CB2B244DB000CEC20C /* links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = links.swift; sourceTree = "<group>"; };
 		87A758CD2B24583A00CEC20C /* CellarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarViewController.swift; sourceTree = "<group>"; };
 		87C9E8242B24FDAA0024FE4F /* WineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineModel.swift; sourceTree = "<group>"; };
+		87C9E8262B24FFB00024FE4F /* WineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineService.swift; sourceTree = "<group>"; };
+		87C9E8282B2502420024FE4F /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				8709A05D2B236C72002C258E /* SceneDelegate.swift */,
 				8709A06C2B236C74002C258E /* Info.plist */,
 				8709A0642B236C72002C258E /* DeusVino.xcdatamodeld */,
+				87C9E8282B2502420024FE4F /* ErrorHandler.swift */,
 			);
 			path = DeusVino;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 		878BD8CA2B23716D00A041E4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				87C9E8262B24FFB00024FE4F /* WineService.swift */,
 				8709A0672B236C74002C258E /* Assets.xcassets */,
 				87A758CB2B244DB000CEC20C /* links.swift */,
 			);
@@ -302,11 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C9E8272B24FFB00024FE4F /* WineService.swift in Sources */,
 				87A758CC2B244DB000CEC20C /* links.swift in Sources */,
 				8709A0602B236C72002C258E /* SearchViewController.swift in Sources */,
 				87C9E8252B24FDAA0024FE4F /* WineModel.swift in Sources */,
 				8709A05C2B236C72002C258E /* AppDelegate.swift in Sources */,
 				8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */,
+				87C9E8292B2502420024FE4F /* ErrorHandler.swift in Sources */,
 				8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */,
 				87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */,
 			);

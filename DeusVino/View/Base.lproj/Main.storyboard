@@ -62,33 +62,30 @@
             </objects>
             <point key="canvasLocation" x="-761.06870229007632" y="-454.22535211267609"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchViewController-->
         <scene sceneID="bZ5-f9-EGK">
             <objects>
-                <viewController id="fYT-VB-DIf" sceneMemberID="viewController">
+                <viewController id="fYT-VB-DIf" userLabel="SearchViewController" customClass="SearchViewController" customModule="DeusVino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1B-LS-7uT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-gO-2ua">
-                                <rect key="frame" x="35" y="111" width="213" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="dTO-oH-sKw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="45"/>
-                                <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yxI-jq-LyJ">
-                                <rect key="frame" x="23" y="180" width="339" height="44"/>
+                                <rect key="frame" x="16" y="200" width="215" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="SNc-Xf-avM"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="fYT-VB-DIf" id="EN5-7H-VGR"/>
                                 </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-js-eMX">
-                                <rect key="frame" x="23" y="286" width="339" height="472"/>
+                                <rect key="frame" x="23" y="318" width="339" height="440"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="paO-Lr-pVG"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2cT-Hn-zjl">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -109,34 +106,54 @@
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapedown right" translatesAutoresizingMaskIntoConstraints="NO" id="TKI-fd-iDD">
-                                <rect key="frame" x="188" y="59" width="264" height="136"/>
+                                <rect key="frame" x="181" y="0.0" width="264" height="136"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="IY6-s5-5WP"/>
                                 </constraints>
                             </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TL-VZ-tOc" userLabel="wineTypePicker">
+                                <rect key="frame" x="236" y="128" width="123" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-gO-2ua">
+                                <rect key="frame" x="16" y="115" width="213" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="dTO-oH-sKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="45"/>
+                                <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="JLN-js-eMX" secondAttribute="trailing" constant="31" id="1J0-Q9-c3e"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="yxI-jq-LyJ" secondAttribute="leading" id="2ld-bq-rlg"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="yxI-jq-LyJ" secondAttribute="bottom" constant="62" id="6SS-0x-eFo"/>
-                            <constraint firstItem="x2N-gO-2ua" firstAttribute="bottom" secondItem="yxI-jq-LyJ" secondAttribute="top" id="C9F-zt-uN8"/>
-                            <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="188" id="Q2T-dr-lBs"/>
-                            <constraint firstItem="TKI-fd-iDD" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" id="Rxp-Sn-WIQ"/>
-                            <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="52" id="WRM-sM-ex6"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="trailing" secondItem="yxI-jq-LyJ" secondAttribute="trailing" id="fyL-po-d8t"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="TKI-fd-iDD" secondAttribute="bottom" constant="91" id="hvz-PY-c8i"/>
-                            <constraint firstItem="bGr-hD-sym" firstAttribute="bottom" secondItem="JLN-js-eMX" secondAttribute="bottom" constant="11" id="ij7-gc-wap"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="TKI-fd-iDD" secondAttribute="trailing" constant="-75" id="jkT-lf-InM"/>
-                            <constraint firstItem="x2N-gO-2ua" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="35" id="mUj-QO-4jN"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="23" id="qvg-yd-9Gq"/>
-                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="x2N-gO-2ua" secondAttribute="trailing" constant="145" id="uS1-o8-xGU"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="yxI-jq-LyJ" secondAttribute="bottom" constant="74" id="9cs-Rd-lzH"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="23" id="CDh-Cn-jq9"/>
+                            <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="181" id="Q2T-dr-lBs"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="7TL-VZ-tOc" secondAttribute="bottom" constant="2" id="QI0-Yq-u4i"/>
+                            <constraint firstItem="TKI-fd-iDD" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="-59" id="Rxp-Sn-WIQ"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="56" id="WRM-sM-ex6"/>
+                            <constraint firstItem="7TL-VZ-tOc" firstAttribute="leading" secondItem="yxI-jq-LyJ" secondAttribute="trailing" constant="5" id="YsF-0D-yHM"/>
+                            <constraint firstItem="7TL-VZ-tOc" firstAttribute="trailing" secondItem="k1B-LS-7uT" secondAttribute="trailingMargin" constant="-18" id="Z08-Zx-WzS"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="bottom" secondItem="JLN-js-eMX" secondAttribute="bottom" constant="11" id="bzr-ey-mYw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TKI-fd-iDD" secondAttribute="trailing" constant="-68" id="jkT-lf-InM"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="16" id="mUj-QO-4jN"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="JLN-js-eMX" secondAttribute="trailing" constant="31" id="tcZ-an-QuN"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="x2N-gO-2ua" secondAttribute="trailing" constant="164" id="uS1-o8-xGU"/>
+                            <constraint firstItem="7TL-VZ-tOc" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="69" id="wjF-Ub-dqH"/>
+                            <constraint firstItem="yxI-jq-LyJ" firstAttribute="top" secondItem="TKI-fd-iDD" secondAttribute="bottom" constant="64" id="xlI-wd-Rb9"/>
+                            <constraint firstItem="yxI-jq-LyJ" firstAttribute="leading" secondItem="k1B-LS-7uT" secondAttribute="leadingMargin" id="za2-lJ-S50"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="NUV-Rk-tkf">
                         <color key="badgeColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="searchBar" destination="yxI-jq-LyJ" id="7zN-ZV-rfC"/>
+                        <outlet property="wineTypePicker" destination="7TL-VZ-tOc" id="C9V-yJ-nmU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOQ-kF-eX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
