@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8709A05C2B236C72002C258E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05B2B236C72002C258E /* AppDelegate.swift */; };
 		8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05D2B236C72002C258E /* SceneDelegate.swift */; };
-		8709A0602B236C72002C258E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05F2B236C72002C258E /* ViewController.swift */; };
+		8709A0602B236C72002C258E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05F2B236C72002C258E /* HomeViewController.swift */; };
 		8709A0632B236C72002C258E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8709A0612B236C72002C258E /* Main.storyboard */; };
 		8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8709A0642B236C72002C258E /* DeusVino.xcdatamodeld */; };
 		8709A0682B236C74002C258E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8709A0672B236C74002C258E /* Assets.xcassets */; };
@@ -17,6 +17,8 @@
 		8709A0762B236C75002C258E /* DeusVinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A0752B236C75002C258E /* DeusVinoTests.swift */; };
 		8709A0802B236C75002C258E /* DeusVinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A07F2B236C75002C258E /* DeusVinoUITests.swift */; };
 		8709A0822B236C75002C258E /* DeusVinoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A0812B236C75002C258E /* DeusVinoUITestsLaunchTests.swift */; };
+		87A758CC2B244DB000CEC20C /* links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CB2B244DB000CEC20C /* links.swift */; };
+		87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CD2B24583A00CEC20C /* CellarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 		8709A0582B236C72002C258E /* DeusVino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeusVino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8709A05B2B236C72002C258E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8709A05D2B236C72002C258E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8709A05F2B236C72002C258E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8709A05F2B236C72002C258E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8709A0622B236C72002C258E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8709A0652B236C72002C258E /* DeusVino.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeusVino.xcdatamodel; sourceTree = "<group>"; };
 		8709A0672B236C74002C258E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		8709A07B2B236C75002C258E /* DeusVinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeusVinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8709A07F2B236C75002C258E /* DeusVinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeusVinoUITests.swift; sourceTree = "<group>"; };
 		8709A0812B236C75002C258E /* DeusVinoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeusVinoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87A758CB2B244DB000CEC20C /* links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = links.swift; sourceTree = "<group>"; };
+		87A758CD2B24583A00CEC20C /* CellarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +105,12 @@
 		8709A05A2B236C72002C258E /* DeusVino */ = {
 			isa = PBXGroup;
 			children = (
+				878BD8CA2B23716D00A041E4 /* Utilities */,
+				878BD8C92B23715800A041E4 /* Controller */,
+				878BD8C82B23714D00A041E4 /* View */,
+				878BD8C72B23714400A041E4 /* Model */,
 				8709A05B2B236C72002C258E /* AppDelegate.swift */,
 				8709A05D2B236C72002C258E /* SceneDelegate.swift */,
-				8709A05F2B236C72002C258E /* ViewController.swift */,
-				8709A0612B236C72002C258E /* Main.storyboard */,
-				8709A0672B236C74002C258E /* Assets.xcassets */,
-				8709A0692B236C74002C258E /* LaunchScreen.storyboard */,
 				8709A06C2B236C74002C258E /* Info.plist */,
 				8709A0642B236C72002C258E /* DeusVino.xcdatamodeld */,
 			);
@@ -128,6 +132,40 @@
 				8709A0812B236C75002C258E /* DeusVinoUITestsLaunchTests.swift */,
 			);
 			path = DeusVinoUITests;
+			sourceTree = "<group>";
+		};
+		878BD8C72B23714400A041E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		878BD8C82B23714D00A041E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8709A0612B236C72002C258E /* Main.storyboard */,
+				8709A0692B236C74002C258E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		878BD8C92B23715800A041E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8709A05F2B236C72002C258E /* HomeViewController.swift */,
+				87A758CD2B24583A00CEC20C /* CellarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		878BD8CA2B23716D00A041E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8709A0672B236C74002C258E /* Assets.xcassets */,
+				87A758CB2B244DB000CEC20C /* links.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8709A0602B236C72002C258E /* ViewController.swift in Sources */,
+				87A758CC2B244DB000CEC20C /* links.swift in Sources */,
+				8709A0602B236C72002C258E /* HomeViewController.swift in Sources */,
 				8709A05C2B236C72002C258E /* AppDelegate.swift in Sources */,
 				8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */,
 				8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */,
+				87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
