@@ -15,20 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dionysoslauncscreenwithoutbg" translatesAutoresizingMaskIntoConstraints="NO" id="8zK-En-uDc">
-                                <rect key="frame" x="-257" y="318" width="1004" height="534"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dionysoslauncscreenwithoutbg" translatesAutoresizingMaskIntoConstraints="NO" id="8zK-En-uDc">
+                                <rect key="frame" x="-219" y="282" width="1006" height="570"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1006" id="eW1-o8-gYY"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeusVino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-Wx-Req">
-                                <rect key="frame" x="50" y="253" width="293" height="74.666666666666686"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-Wx-Req">
+                                <rect key="frame" x="50" y="162" width="293" height="74.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74.666666666666686" id="0w6-b7-y4x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="64"/>
                                 <color key="textColor" red="0.45245215311004783" green="0.04155187066460761" blue="0.057558531292529989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8zK-En-uDc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-219" id="97Y-vn-6po"/>
+                            <constraint firstItem="8Jm-Wx-Req" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="E4Q-Fm-4W4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8zK-En-uDc" secondAttribute="bottom" constant="-34" id="aIQ-SZ-Hjc"/>
+                            <constraint firstItem="8Jm-Wx-Req" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n6h-Wb-W6b"/>
+                            <constraint firstItem="8zK-En-uDc" firstAttribute="top" secondItem="8Jm-Wx-Req" secondAttribute="bottom" constant="45.333333333333314" id="qLM-rG-3cL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

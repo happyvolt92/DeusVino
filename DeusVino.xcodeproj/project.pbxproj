@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8709A05C2B236C72002C258E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05B2B236C72002C258E /* AppDelegate.swift */; };
 		8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05D2B236C72002C258E /* SceneDelegate.swift */; };
-		8709A0602B236C72002C258E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05F2B236C72002C258E /* HomeViewController.swift */; };
+		8709A0602B236C72002C258E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A05F2B236C72002C258E /* SearchViewController.swift */; };
 		8709A0632B236C72002C258E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8709A0612B236C72002C258E /* Main.storyboard */; };
 		8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8709A0642B236C72002C258E /* DeusVino.xcdatamodeld */; };
 		8709A0682B236C74002C258E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8709A0672B236C74002C258E /* Assets.xcassets */; };
@@ -42,7 +42,7 @@
 		8709A0582B236C72002C258E /* DeusVino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeusVino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8709A05B2B236C72002C258E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8709A05D2B236C72002C258E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8709A05F2B236C72002C258E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8709A05F2B236C72002C258E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8709A0622B236C72002C258E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8709A0652B236C72002C258E /* DeusVino.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeusVino.xcdatamodel; sourceTree = "<group>"; };
 		8709A0672B236C74002C258E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		878BD8C92B23715800A041E4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8709A05F2B236C72002C258E /* HomeViewController.swift */,
+				8709A05F2B236C72002C258E /* SearchViewController.swift */,
 				87A758CD2B24583A00CEC20C /* CellarViewController.swift */,
 			);
 			path = Controller;
@@ -300,7 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87A758CC2B244DB000CEC20C /* links.swift in Sources */,
-				8709A0602B236C72002C258E /* HomeViewController.swift in Sources */,
+				8709A0602B236C72002C258E /* SearchViewController.swift in Sources */,
 				8709A05C2B236C72002C258E /* AppDelegate.swift in Sources */,
 				8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */,
 				8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */,

@@ -1,99 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IWP-Bm-CjD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IGa-s9-qZY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="x4W-5I-M60">
+        <!--Cellar-->
+        <scene sceneID="60B-nd-rvd">
             <objects>
-                <navigationController id="IWP-Bm-CjD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pGU-0I-ABL">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="PF4-N8-vkp" kind="relationship" relationship="rootViewController" id="yFM-gQ-by6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JSH-Oo-HAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-888" y="-735"/>
-        </scene>
-        <!--Cellar View Controller-->
-        <scene sceneID="9s3-1s-Of2">
-            <objects>
-                <viewController id="PF4-N8-vkp" customClass="CellarViewController" customModule="DeusVino" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OYJ-fc-GC9">
+                <viewController id="gQO-tp-rQM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cAt-Zd-Xo1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYk-eV-YQq">
-                                <rect key="frame" x="0.0" y="763" width="393" height="55"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="lBA-ii-hzL"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem title="" image="iconcavesmall" id="Teu-dV-qyK" userLabel="Cellar"/>
-                                    <tabBarItem systemItem="search" id="vpu-Uu-Pmv">
-                                        <color key="badgeColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </tabBarItem>
-                                </items>
-                            </tabBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-5R-HYF">
-                                <rect key="frame" x="36" y="458" width="320" height="281"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-Zv-myh">
+                                <rect key="frame" x="-97" y="-14" width="163" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1Y-hE-7RV">
-                                <rect key="frame" x="36" y="103" width="138" height="38"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redgrapeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-BC-uhk">
+                                <rect key="frame" x="254" y="545" width="285" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="30"/>
-                                <color key="textColor" red="0.44738711120000002" green="0.03905114615" blue="0.049281695299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unl-qp-yT6">
+                                <rect key="frame" x="107" y="93" width="179" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="39"/>
+                                <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6t-Ke-1tn">
-                                <rect key="frame" x="36" y="181" width="320" height="101"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where Bacchus's Spirit Thrives" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-6v-re2">
+                                <rect key="frame" x="36" y="128" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="e0h-bC-bZL"/>
+                        <viewLayoutGuide key="safeArea" id="2Sc-V8-eQV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="aYk-eV-YQq" firstAttribute="bottom" secondItem="e0h-bC-bZL" secondAttribute="bottom" id="2WQ-KP-LqQ"/>
-                            <constraint firstItem="aYk-eV-YQq" firstAttribute="centerX" secondItem="OYJ-fc-GC9" secondAttribute="centerX" id="4Dw-y5-9Gj"/>
-                            <constraint firstItem="aYk-eV-YQq" firstAttribute="leading" secondItem="e0h-bC-bZL" secondAttribute="leading" id="FfZ-xL-i3E"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="N7N-iC-bSE"/>
+                    <tabBarItem key="tabBarItem" title="Cellar" image="iconcavesmall" id="ElD-dq-mgi"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yjw-hM-hHK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="syW-G2-2vf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142.74809160305344" y="-735.21126760563379"/>
+            <point key="canvasLocation" x="-761.06870229007632" y="-454.22535211267609"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="3hE-At-g26">
+        <scene sceneID="bZ5-f9-EGK">
             <objects>
-                <viewController id="3xJ-yw-ON3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="th8-6B-buK">
+                <viewController id="fYT-VB-DIf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k1B-LS-7uT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="asS-Zj-Fun"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-gO-2ua">
+                                <rect key="frame" x="23" y="101" width="207" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="40"/>
+                                <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxI-jq-LyJ">
+                                <rect key="frame" x="23" y="180" width="339" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fYT-VB-DIf" id="EN5-7H-VGR"/>
+                                </connections>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-js-eMX">
+                                <rect key="frame" x="23" y="286" width="339" height="472"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2cT-Hn-zjl">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JQu-78-BJi">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xpM-Lg-yLO">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
+                                        <color key="tintColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="NUV-Rk-tkf">
+                        <color key="badgeColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QgM-p1-Ajx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOQ-kF-eX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998" y="-721"/>
+            <point key="canvasLocation" x="-761.06870229007632" y="-1060.5633802816901"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="s7D-yC-Tyy">
+            <objects>
+                <tabBarController id="IGa-s9-qZY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yQE-Qg-dPE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.9503027811004785" green="0.9503027811004785" blue="0.9503027811004785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fYT-VB-DIf" kind="relationship" relationship="viewControllers" id="ae2-5j-vjn"/>
+                        <segue destination="gQO-tp-rQM" kind="relationship" relationship="viewControllers" id="7A9-ip-wsz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iig-rT-PuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1663" y="-756"/>
         </scene>
     </scenes>
     <resources>
         <image name="iconcavesmall" width="81" height="77"/>
+        <image name="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" width="408" height="612"/>
+        <image name="redgrapeLeft" width="408" height="612"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
