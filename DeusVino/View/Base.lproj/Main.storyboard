@@ -17,31 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-Zv-myh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-Zv-myh">
                                 <rect key="frame" x="-97" y="-14" width="163" height="264"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="wZT-DE-Q4J"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redgrapeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-BC-uhk">
                                 <rect key="frame" x="254" y="545" width="285" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unl-qp-yT6">
-                                <rect key="frame" x="107" y="93" width="179" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="39"/>
-                                <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where Bacchus's Spirit Thrives" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-6v-re2">
-                                <rect key="frame" x="36" y="128" width="320" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Bacchus's Spirit Thrives" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-6v-re2">
+                                <rect key="frame" x="36" y="142" width="321" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Orv-yd-d0c"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="19"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unl-qp-yT6">
+                                <rect key="frame" x="84" y="101" width="225" height="62"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="49"/>
+                                <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sc-V8-eQV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Sc-V8-eQV" firstAttribute="bottom" secondItem="MhZ-Zv-myh" secondAttribute="bottom" constant="519" id="4To-dW-64b"/>
+                            <constraint firstItem="vc3-6v-re2" firstAttribute="centerX" secondItem="Unl-qp-yT6" secondAttribute="centerX" id="GDG-RD-YAH"/>
+                            <constraint firstItem="MhZ-Zv-myh" firstAttribute="leading" secondItem="cAt-Zd-Xo1" secondAttribute="leading" constant="-97" id="K2t-zI-ApA"/>
+                            <constraint firstItem="MhZ-Zv-myh" firstAttribute="top" secondItem="cAt-Zd-Xo1" secondAttribute="topMargin" constant="-73" id="ZpN-qb-BBr"/>
+                            <constraint firstItem="vc3-6v-re2" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="36" id="fcN-3B-iaB"/>
+                            <constraint firstItem="Unl-qp-yT6" firstAttribute="leading" secondItem="MhZ-Zv-myh" secondAttribute="trailing" constant="18" id="ktk-2O-Mf4"/>
+                            <constraint firstItem="vc3-6v-re2" firstAttribute="top" secondItem="2Sc-V8-eQV" secondAttribute="top" constant="83" id="owZ-B2-nuM"/>
+                            <constraint firstItem="vc3-6v-re2" firstAttribute="top" secondItem="Unl-qp-yT6" secondAttribute="bottom" constant="-21" id="zXm-lq-Bt4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cellar" image="iconcavesmall" id="ElD-dq-mgi"/>
                 </viewController>
@@ -57,24 +70,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-gO-2ua">
-                                <rect key="frame" x="23" y="101" width="207" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-gO-2ua">
+                                <rect key="frame" x="35.333333333333329" y="111" width="144.66666666666669" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="mye-GY-eRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
                                 <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxI-jq-LyJ">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yxI-jq-LyJ">
                                 <rect key="frame" x="23" y="180" width="339" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="fYT-VB-DIf" id="EN5-7H-VGR"/>
                                 </connections>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-js-eMX">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-js-eMX">
                                 <rect key="frame" x="23" y="286" width="339" height="472"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2cT-Hn-zjl">
                                     <size key="itemSize" width="128" height="128"/>
@@ -95,9 +108,31 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapedown right" translatesAutoresizingMaskIntoConstraints="NO" id="TKI-fd-iDD">
+                                <rect key="frame" x="188" y="59" width="264" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="IY6-s5-5WP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="JLN-js-eMX" secondAttribute="trailing" constant="31" id="1J0-Q9-c3e"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="yxI-jq-LyJ" secondAttribute="leading" id="2ld-bq-rlg"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="yxI-jq-LyJ" secondAttribute="bottom" constant="62" id="6SS-0x-eFo"/>
+                            <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="188" id="Q2T-dr-lBs"/>
+                            <constraint firstItem="TKI-fd-iDD" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" id="Rxp-Sn-WIQ"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="trailing" secondItem="yxI-jq-LyJ" secondAttribute="trailing" id="fyL-po-d8t"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="TKI-fd-iDD" secondAttribute="bottom" constant="91" id="hvz-PY-c8i"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="52" id="iTa-Am-GI3"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="bottom" secondItem="JLN-js-eMX" secondAttribute="bottom" constant="11" id="ij7-gc-wap"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TKI-fd-iDD" secondAttribute="trailing" constant="-75" id="jkT-lf-InM"/>
+                            <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x2N-gO-2ua" secondAttribute="trailing" symbolic="YES" id="obH-qr-hBE"/>
+                            <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="23" id="qvg-yd-9Gq"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="35.333333333333329" id="tg5-6d-fXU"/>
+                            <constraint firstItem="yxI-jq-LyJ" firstAttribute="top" secondItem="x2N-gO-2ua" secondAttribute="bottom" id="xVA-nu-5rH"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="NUV-Rk-tkf">
                         <color key="badgeColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -130,6 +165,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="grapedown right" width="612" height="408"/>
         <image name="iconcavesmall" width="81" height="77"/>
         <image name="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" width="408" height="612"/>
         <image name="redgrapeLeft" width="408" height="612"/>
