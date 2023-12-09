@@ -19,6 +19,7 @@
 		8709A0822B236C75002C258E /* DeusVinoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8709A0812B236C75002C258E /* DeusVinoUITestsLaunchTests.swift */; };
 		87A758CC2B244DB000CEC20C /* links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CB2B244DB000CEC20C /* links.swift */; };
 		87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CD2B24583A00CEC20C /* CellarViewController.swift */; };
+		87C9E8252B24FDAA0024FE4F /* WineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8242B24FDAA0024FE4F /* WineModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8709A0812B236C75002C258E /* DeusVinoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeusVinoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		87A758CB2B244DB000CEC20C /* links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = links.swift; sourceTree = "<group>"; };
 		87A758CD2B24583A00CEC20C /* CellarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarViewController.swift; sourceTree = "<group>"; };
+		87C9E8242B24FDAA0024FE4F /* WineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		878BD8C72B23714400A041E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				87C9E8242B24FDAA0024FE4F /* WineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				87A758CC2B244DB000CEC20C /* links.swift in Sources */,
 				8709A0602B236C72002C258E /* SearchViewController.swift in Sources */,
+				87C9E8252B24FDAA0024FE4F /* WineModel.swift in Sources */,
 				8709A05C2B236C72002C258E /* AppDelegate.swift in Sources */,
 				8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */,
 				8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */,

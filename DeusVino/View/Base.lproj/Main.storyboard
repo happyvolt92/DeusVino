@@ -71,11 +71,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-gO-2ua">
-                                <rect key="frame" x="35.333333333333329" y="111" width="144.66666666666669" height="69"/>
+                                <rect key="frame" x="35" y="111" width="213" height="69"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="mye-GY-eRs"/>
+                                    <constraint firstAttribute="height" constant="69" id="dTO-oH-sKw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="48"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="45"/>
                                 <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -121,17 +121,17 @@
                             <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="JLN-js-eMX" secondAttribute="trailing" constant="31" id="1J0-Q9-c3e"/>
                             <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="yxI-jq-LyJ" secondAttribute="leading" id="2ld-bq-rlg"/>
                             <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="yxI-jq-LyJ" secondAttribute="bottom" constant="62" id="6SS-0x-eFo"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="bottom" secondItem="yxI-jq-LyJ" secondAttribute="top" id="C9F-zt-uN8"/>
                             <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="188" id="Q2T-dr-lBs"/>
                             <constraint firstItem="TKI-fd-iDD" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" id="Rxp-Sn-WIQ"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="52" id="WRM-sM-ex6"/>
                             <constraint firstItem="JLN-js-eMX" firstAttribute="trailing" secondItem="yxI-jq-LyJ" secondAttribute="trailing" id="fyL-po-d8t"/>
                             <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="TKI-fd-iDD" secondAttribute="bottom" constant="91" id="hvz-PY-c8i"/>
-                            <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="52" id="iTa-Am-GI3"/>
                             <constraint firstItem="bGr-hD-sym" firstAttribute="bottom" secondItem="JLN-js-eMX" secondAttribute="bottom" constant="11" id="ij7-gc-wap"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TKI-fd-iDD" secondAttribute="trailing" constant="-75" id="jkT-lf-InM"/>
-                            <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="x2N-gO-2ua" secondAttribute="trailing" symbolic="YES" id="obH-qr-hBE"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="35" id="mUj-QO-4jN"/>
                             <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="23" id="qvg-yd-9Gq"/>
-                            <constraint firstItem="x2N-gO-2ua" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="35.333333333333329" id="tg5-6d-fXU"/>
-                            <constraint firstItem="yxI-jq-LyJ" firstAttribute="top" secondItem="x2N-gO-2ua" secondAttribute="bottom" id="xVA-nu-5rH"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="x2N-gO-2ua" secondAttribute="trailing" constant="145" id="uS1-o8-xGU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="NUV-Rk-tkf">
