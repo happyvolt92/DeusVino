@@ -7,7 +7,7 @@ class WineService {
     // Function to fetch wines from the Vivino API based on wine name
     func fetchWines(for wineName: String, completion: @escaping (Result<[Wine], Error>) -> Void) {
         // Construct the Vivino API URL using the provided parameters
-        let apiUrl = "https://api.example.com/vivino"
+        let apiUrl = "https://www.vivino.com/wines"
         
         // Create URL components and add query parameters
         var components = URLComponents(string: apiUrl)!

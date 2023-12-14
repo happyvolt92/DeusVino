@@ -4,8 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,31 +79,6 @@
                                     <outlet property="delegate" destination="fYT-VB-DIf" id="EN5-7H-VGR"/>
                                 </connections>
                             </searchBar>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JLN-js-eMX">
-                                <rect key="frame" x="23" y="361" width="339" height="397"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="397" id="paO-Lr-pVG"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2cT-Hn-zjl">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JQu-78-BJi">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xpM-Lg-yLO">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="separatorColor"/>
-                                        <color key="tintColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapedown right" translatesAutoresizingMaskIntoConstraints="NO" id="TKI-fd-iDD">
                                 <rect key="frame" x="237" y="41" width="612" height="112"/>
                                 <constraints>
@@ -122,30 +95,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHt-tg-VQf">
-                                <rect key="frame" x="23" y="239" width="102" height="101"/>
+                                <rect key="frame" x="23" y="239" width="96" height="101"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="3Dl-Ip-UKS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="VEb-V8-g7z"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="REDWINE">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.27659463474893164" green="0.28181340144230771" blue="0.28181340144230771" alpha="0.038965450310559008" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="8"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-ep-i4U">
-                                <rect key="frame" x="262.66666666666669" y="239" width="109.66666666666669" height="101"/>
+                                <rect key="frame" x="281" y="239" width="96" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="Aca-4d-rIa"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ROSEWINE">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" red="0.27659463470000001" green="0.2818134014" blue="0.2818134014" alpha="0.038965450309999997" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="8"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-Bo-S1w">
-                                <rect key="frame" x="133.33333333333334" y="239" width="118.33333333333334" height="101"/>
+                                <rect key="frame" x="148" y="239" width="96" height="101"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="mVv-fH-pWC"/>
                                     <constraint firstAttribute="height" constant="101" id="wOV-90-J5v"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -154,30 +132,37 @@
                                         <color key="backgroundColor" red="0.27659463470000001" green="0.2818134014" blue="0.2818134014" alpha="0.038965450309999997" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" red="0.27659463470000001" green="0.2818134014" blue="0.2818134014" alpha="0.038965450309999997" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="8"/>
                                 </buttonConfiguration>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapedown right" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-pv-9Lf">
+                                <rect key="frame" x="215" y="49" width="201" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="Ccc-oy-vV0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bGr-hD-sym" firstAttribute="bottom" secondItem="JLN-js-eMX" secondAttribute="bottom" constant="11" id="Arm-qT-e1S"/>
+                            <constraint firstItem="Waf-pv-9Lf" firstAttribute="leading" secondItem="Gsx-ep-i4U" secondAttribute="leading" constant="-66" id="10B-iZ-eJK"/>
+                            <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="18" id="9bk-8g-Prh"/>
                             <constraint firstItem="0m7-Bo-S1w" firstAttribute="top" secondItem="yxI-jq-LyJ" secondAttribute="bottom" constant="23" id="Exq-uc-Npa"/>
+                            <constraint firstItem="yxI-jq-LyJ" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="16" id="Gg2-33-qLj"/>
                             <constraint firstItem="0m7-Bo-S1w" firstAttribute="bottom" secondItem="Gsx-ep-i4U" secondAttribute="bottom" id="J3X-ec-tIl"/>
+                            <constraint firstItem="yxI-jq-LyJ" firstAttribute="top" secondItem="Waf-pv-9Lf" secondAttribute="bottom" id="NPE-gC-fzh"/>
                             <constraint firstItem="0m7-Bo-S1w" firstAttribute="top" secondItem="Gsx-ep-i4U" secondAttribute="top" id="NV2-mr-u5l"/>
                             <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="18" id="Opa-L9-Wnr"/>
                             <constraint firstItem="TKI-fd-iDD" firstAttribute="leading" secondItem="x2N-gO-2ua" secondAttribute="trailing" constant="15" id="QnT-ex-Rbe"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="centerX" secondItem="0m7-Bo-S1w" secondAttribute="centerX" id="RqN-aC-G05"/>
                             <constraint firstItem="x2N-gO-2ua" firstAttribute="leading" secondItem="yxI-jq-LyJ" secondAttribute="leading" id="Suo-o7-wWh"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="trailing" secondItem="yxI-jq-LyJ" secondAttribute="trailing" id="VfO-kQ-S5r"/>
-                            <constraint firstItem="FHt-tg-VQf" firstAttribute="leading" secondItem="JLN-js-eMX" secondAttribute="leading" id="Wxs-Rh-yGZ"/>
+                            <constraint firstItem="0m7-Bo-S1w" firstAttribute="leading" secondItem="FHt-tg-VQf" secondAttribute="trailing" constant="29" id="Xi8-Lq-NLl"/>
+                            <constraint firstItem="Waf-pv-9Lf" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="-10" id="Xm6-Op-RRR"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="bottom" secondItem="FHt-tg-VQf" secondAttribute="bottom" constant="429" id="YEr-XK-ha1"/>
                             <constraint firstItem="Gsx-ep-i4U" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0m7-Bo-S1w" secondAttribute="trailing" constant="8" symbolic="YES" id="YqN-fN-5HH"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="top" secondItem="FHt-tg-VQf" secondAttribute="bottom" constant="21" id="aRv-PH-tDA"/>
-                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="Gsx-ep-i4U" secondAttribute="trailing" constant="20.666666666666629" id="c8v-7b-QjN"/>
-                            <constraint firstItem="JLN-js-eMX" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="23" id="g4I-2l-Utl"/>
+                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="Gsx-ep-i4U" secondAttribute="trailing" constant="16" id="c8v-7b-QjN"/>
+                            <constraint firstItem="FHt-tg-VQf" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="23" id="fYd-YI-xgt"/>
                             <constraint firstItem="FHt-tg-VQf" firstAttribute="bottom" secondItem="0m7-Bo-S1w" secondAttribute="bottom" id="n9l-vo-VbT"/>
                             <constraint firstItem="FHt-tg-VQf" firstAttribute="top" secondItem="0m7-Bo-S1w" secondAttribute="top" id="p5X-9f-oRF"/>
-                            <constraint firstItem="bGr-hD-sym" firstAttribute="trailing" secondItem="JLN-js-eMX" secondAttribute="trailing" constant="31" id="qkm-al-CiC"/>
-                            <constraint firstItem="0m7-Bo-S1w" firstAttribute="leading" secondItem="FHt-tg-VQf" secondAttribute="trailing" constant="8.3333333333333712" id="tM4-Cg-te2"/>
                             <constraint firstItem="yxI-jq-LyJ" firstAttribute="top" secondItem="TKI-fd-iDD" secondAttribute="bottom" constant="7" id="wC4-8l-m1N"/>
                         </constraints>
                     </view>
@@ -222,11 +207,5 @@
         <image name="iconcavesmall" width="81" height="77"/>
         <image name="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" width="408" height="612"/>
         <image name="redgrapeLeft" width="408" height="612"/>
-        <systemColor name="separatorColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
