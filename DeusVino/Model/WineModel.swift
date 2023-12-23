@@ -8,9 +8,8 @@
 import Foundation
 
 struct WineResponse: Codable {
-    let vinos: [Wine]
+    let wine: [Wine]
     let status: String
-    let message: String?
     let httpStatus: Int?
     let pageIndex: Int?
 }
@@ -24,9 +23,21 @@ struct Wine: Codable {
     let averageRating: Double
     let ratings: Int
     let price: Double
-    let type: String 
-
-    enum CodingKeys: String, CodingKey {
+    let type: String
+    
+    
+    enum WineType: String, CodingKey {
         case name, link, thumb, country, region, averageRating, ratings, price, type
     }
+    
+   
+    
+////    gérer le type de vin Wine.Type dnas le struct wine puis réutiliser dans le wineType
+//    enum wineType{
+//        case redwine
+//        case whitewine
+//        case rosewine
+//    }
+//    
+    
 }

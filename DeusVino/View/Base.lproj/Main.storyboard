@@ -4,9 +4,27 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Item-->
+        <scene sceneID="0bc-Zt-Hwi">
+            <objects>
+                <viewController id="S62-Vr-NKC" customClass="CameraViewController" customModule="DeusVino" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hPG-rh-h2c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KLi-WJ-3ll"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="camera" catalog="system" id="5dy-yX-9Ew"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uz8-JH-tve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-761" y="215"/>
+        </scene>
         <!--Cellar-->
         <scene sceneID="60B-nd-rvd">
             <objects>
@@ -141,6 +159,27 @@
                                     <constraint firstAttribute="width" constant="201" id="Ccc-oy-vV0"/>
                                 </constraints>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GOW-dh-R73">
+                                <rect key="frame" x="47" y="503" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8h1-tg-4xH">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="C0y-8V-L7P" userLabel="CollectionListView">
+                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QM0-w4-6P2">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -195,17 +234,22 @@
                     <connections>
                         <segue destination="fYT-VB-DIf" kind="relationship" relationship="viewControllers" id="ae2-5j-vjn"/>
                         <segue destination="gQO-tp-rQM" kind="relationship" relationship="viewControllers" id="7A9-ip-wsz"/>
+                        <segue destination="S62-Vr-NKC" kind="relationship" relationship="viewControllers" id="02n-me-FdR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iig-rT-PuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1663" y="-756"/>
+            <point key="canvasLocation" x="-2361" y="-318"/>
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="93"/>
         <image name="grapedown right" width="612" height="408"/>
         <image name="iconcavesmall" width="81" height="77"/>
         <image name="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" width="408" height="612"/>
         <image name="redgrapeLeft" width="408" height="612"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
