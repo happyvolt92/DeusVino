@@ -16,6 +16,16 @@
                     <view key="view" contentMode="scaleToFill" id="hPG-rh-h2c">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ9-GW-nvr">
+                                <rect key="frame" x="167" y="674" width="59" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera.circle" catalog="system">
+                                    <color key="baseForegroundColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KLi-WJ-3ll"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -23,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz8-JH-tve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-761" y="272"/>
+            <point key="canvasLocation" x="-761.06870229007632" y="271.83098591549299"/>
         </scene>
         <!--Cellar-->
         <scene sceneID="60B-nd-rvd">
@@ -282,6 +292,7 @@
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
+        <image name="camera.circle" catalog="system" width="128" height="123"/>
         <image name="grapedown right" width="612" height="408"/>
         <image name="iconcavesmall" width="81" height="77"/>
         <image name="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" width="408" height="612"/>
