@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class CellarViewController : UIViewController{
+    private let reuseIdentifier = "WineCellarCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()

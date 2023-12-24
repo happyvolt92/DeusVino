@@ -23,12 +23,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz8-JH-tve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-761" y="215"/>
+            <point key="canvasLocation" x="-761" y="272"/>
         </scene>
         <!--Cellar-->
         <scene sceneID="60B-nd-rvd">
             <objects>
-                <viewController id="gQO-tp-rQM" sceneMemberID="viewController">
+                <viewController id="gQO-tp-rQM" customClass="CellarViewController" customModule="DeusVino" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cAt-Zd-Xo1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,11 +40,11 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redgrapeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-BC-uhk">
-                                <rect key="frame" x="254" y="545" width="285" height="261"/>
+                                <rect key="frame" x="260" y="614" width="285" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Bacchus's Spirit Thrives" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-6v-re2">
-                                <rect key="frame" x="36" y="142" width="321" height="63"/>
+                                <rect key="frame" x="36" y="142" width="320.33333333333331" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="Orv-yd-d0c"/>
                                 </constraints>
@@ -53,22 +53,81 @@
                                 <color key="highlightedColor" red="0.19607841970000001" green="0.19607841970000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeusVino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unl-qp-yT6">
-                                <rect key="frame" x="84" y="101" width="225" height="62"/>
+                                <rect key="frame" x="84.000000000000014" y="101" width="224.33333333333337" height="62"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="49"/>
                                 <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQG-HE-dHG" userLabel="HStackButtonView">
+                                <rect key="frame" x="38" y="238" width="307" height="33.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niL-IK-uvc" userLabel="RedWineSorterButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="33.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RedWine" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzo-G3-5hF" userLabel="RoseWineSorterButton">
+                                        <rect key="frame" x="102.33333333333334" y="0.0" width="102.33333333333334" height="33.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="WhiteWine" cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWv-7d-wDS" userLabel="WhiteWineSorterButton">
+                                        <rect key="frame" x="204.66666666666666" y="0.0" width="102.33333333333334" height="33.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RoseWine" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background"/>
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9hF-E7-tUg">
+                                <rect key="frame" x="38" y="297" width="307" height="406"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.44738711120000002" green="0.03905114615" blue="0.049281695299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="406" id="Xvw-qY-f5h"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JER-3G-ubB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WineCellarCell" id="1k0-sF-Kph">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tzm-Pz-a9U">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sc-V8-eQV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2Sc-V8-eQV" firstAttribute="bottom" secondItem="MhZ-Zv-myh" secondAttribute="bottom" constant="519" id="4To-dW-64b"/>
+                            <constraint firstItem="2Sc-V8-eQV" firstAttribute="bottom" secondItem="9hF-E7-tUg" secondAttribute="bottom" constant="66" id="7MU-q8-PpP"/>
+                            <constraint firstItem="9hF-E7-tUg" firstAttribute="trailing" secondItem="yQG-HE-dHG" secondAttribute="trailing" id="9Tx-GC-sw1"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="centerX" secondItem="Unl-qp-yT6" secondAttribute="centerX" id="GDG-RD-YAH"/>
+                            <constraint firstItem="vc3-6v-re2" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="36" id="Gwm-fQ-G8L"/>
                             <constraint firstItem="MhZ-Zv-myh" firstAttribute="leading" secondItem="cAt-Zd-Xo1" secondAttribute="leading" constant="-97" id="K2t-zI-ApA"/>
+                            <constraint firstItem="9hF-E7-tUg" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="38" id="RsK-Dz-rBF"/>
+                            <constraint firstItem="9hF-E7-tUg" firstAttribute="leading" secondItem="yQG-HE-dHG" secondAttribute="leading" id="YeD-Ct-3SG"/>
                             <constraint firstItem="MhZ-Zv-myh" firstAttribute="top" secondItem="cAt-Zd-Xo1" secondAttribute="topMargin" constant="-73" id="ZpN-qb-BBr"/>
+                            <constraint firstItem="Unl-qp-yT6" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="84.000000000000014" id="fTx-E8-HxF"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="36" id="fcN-3B-iaB"/>
+                            <constraint firstItem="yQG-HE-dHG" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="38" id="gbe-d6-8lp"/>
                             <constraint firstItem="Unl-qp-yT6" firstAttribute="leading" secondItem="MhZ-Zv-myh" secondAttribute="trailing" constant="18" id="ktk-2O-Mf4"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="top" secondItem="2Sc-V8-eQV" secondAttribute="top" constant="83" id="owZ-B2-nuM"/>
+                            <constraint firstItem="9hF-E7-tUg" firstAttribute="top" secondItem="yQG-HE-dHG" secondAttribute="bottom" constant="25.666666666666686" id="sHx-0b-Eb3"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="top" secondItem="Unl-qp-yT6" secondAttribute="bottom" constant="-21" id="zXm-lq-Bt4"/>
                         </constraints>
                     </view>
@@ -76,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syW-G2-2vf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-761.06870229007632" y="-454.22535211267609"/>
+            <point key="canvasLocation" x="-761.06870229007632" y="-392.25352112676057"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="bZ5-f9-EGK">
@@ -112,7 +171,7 @@
                                 <color key="textColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHt-tg-VQf">
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHt-tg-VQf" userLabel="RedWineSorterButton">
                                 <rect key="frame" x="23" y="239" width="96" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="VEb-V8-g7z"/>
@@ -125,7 +184,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="8"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-ep-i4U">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsx-ep-i4U" userLabel="RoseWineSorterButon">
                                 <rect key="frame" x="281" y="239" width="96" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="Aca-4d-rIa"/>
@@ -138,7 +197,7 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="8"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-Bo-S1w">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-Bo-S1w" userLabel="WhiteWineSorterButton">
                                 <rect key="frame" x="148" y="239" width="96" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="96" id="mVv-fH-pWC"/>
@@ -159,27 +218,6 @@
                                     <constraint firstAttribute="width" constant="201" id="Ccc-oy-vV0"/>
                                 </constraints>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GOW-dh-R73">
-                                <rect key="frame" x="47" y="503" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8h1-tg-4xH">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="C0y-8V-L7P" userLabel="CollectionListView">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QM0-w4-6P2">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
