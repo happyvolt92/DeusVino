@@ -21,6 +21,7 @@
 		87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A758CD2B24583A00CEC20C /* CellarViewController.swift */; };
 		87A8E8392B36D35800A13255 /* wineModelJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 87A8E8382B36D35800A13255 /* wineModelJson.json */; };
 		87A8E83B2B36D3B500A13255 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8E83A2B36D3B500A13255 /* CameraViewController.swift */; };
+		87A8E83D2B38213D00A13255 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A8E83C2B38213D00A13255 /* ImagePreviewViewController.swift */; };
 		87C9E8252B24FDAA0024FE4F /* WineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8242B24FDAA0024FE4F /* WineModel.swift */; };
 		87C9E8272B24FFB00024FE4F /* WineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8262B24FFB00024FE4F /* WineService.swift */; };
 		87C9E8292B2502420024FE4F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9E8282B2502420024FE4F /* ErrorHandler.swift */; };
@@ -62,6 +63,7 @@
 		87A758CD2B24583A00CEC20C /* CellarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellarViewController.swift; sourceTree = "<group>"; };
 		87A8E8382B36D35800A13255 /* wineModelJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wineModelJson.json; sourceTree = "<group>"; };
 		87A8E83A2B36D3B500A13255 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		87A8E83C2B38213D00A13255 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
 		87C9E8242B24FDAA0024FE4F /* WineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineModel.swift; sourceTree = "<group>"; };
 		87C9E8262B24FFB00024FE4F /* WineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineService.swift; sourceTree = "<group>"; };
 		87C9E8282B2502420024FE4F /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				8709A05F2B236C72002C258E /* SearchViewController.swift */,
 				87A758CD2B24583A00CEC20C /* CellarViewController.swift */,
 				87A8E83A2B36D3B500A13255 /* CameraViewController.swift */,
+				87A8E83C2B38213D00A13255 /* ImagePreviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				8709A0662B236C72002C258E /* DeusVino.xcdatamodeld in Sources */,
 				87C9E8292B2502420024FE4F /* ErrorHandler.swift in Sources */,
 				8709A05E2B236C72002C258E /* SceneDelegate.swift in Sources */,
+				87A8E83D2B38213D00A13255 /* ImagePreviewViewController.swift in Sources */,
 				87A758CE2B24583A00CEC20C /* CellarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
