@@ -16,7 +16,7 @@ import Foundation
 
 // MARK: - WineElement
 struct WineElement: Codable {
-    let id: Int?
+    let id: UUID?
     let seoName, year, name: String?
     let statistics: Statistics?
     let organicCertificationID: JSONNull?
@@ -121,7 +121,7 @@ enum Status: String, Codable {
 
 // MARK: - WineClass
 struct WineClass: Codable {
-    let id: Int?
+    let id: UUID?
     let name, seoName: String?
     let typeID, vintageType: Int?
     let isNatural: Bool?
@@ -184,7 +184,7 @@ enum LightWineryCountry: String, Codable {
 
 // MARK: - Region
 struct Region: Codable {
-    let id: Int?
+    let id: UUID?
     let name: String?
     let nameEn: NameEn?
     let seoName, country: String?
@@ -220,13 +220,13 @@ enum NameEn: String, Codable {
 
 // MARK: - Class
 struct Class: Codable {
-    let id: Int?
-    let countryCode, abbreviation, description: String?
+    let id: UUID?
+    let countryCode, abbreviation, wineClassDescription: String?
 
     enum CodingKeys: String, CodingKey {
         case id
         case countryCode = "country_code"
-        case abbreviation, description
+        case abbreviation, wineClassDescription
     }
 }
 
@@ -251,7 +251,7 @@ struct Flavor: Codable {
 
 // MARK: - AryKeyword
 struct AryKeyword: Codable {
-    let id: Int?
+    let id: UUID?
     let name: String?
     let count: Int?
 }
@@ -278,7 +278,7 @@ struct Structure: Codable {
 
 // MARK: - Winery
 struct Winery: Codable {
-    let id: Int?
+    let id: UUID?
     let name, businessName, seoName: String?
     let status: Int?
     let region: Region?
@@ -334,7 +334,7 @@ enum AddressCountry: String, Codable {
 
 // MARK: - FirstWine
 struct FirstWine: Codable {
-    let id: Int?
+    let id: UUID?
     let name, seoName: String?
     let typeID, vintageType: Int?
     let isNatural: Bool?
@@ -381,13 +381,13 @@ enum ReviewStatus: String, Codable {
 
 // MARK: - WineMaker
 struct WineMaker: Codable {
-    let id: Int?
+    let id: UUID?
     let name: String?
 }
 
 // MARK: - WineryGroup
 struct WineryGroup: Codable {
-    let id: Int?
+    let id: UUID?
     let name: String?
     let website: String?
 }

@@ -19,6 +19,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        
     }
 
     @IBAction func takePhotoButtonPressed(_ sender: UIButton) {
@@ -46,3 +47,4 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
     }
 }
+

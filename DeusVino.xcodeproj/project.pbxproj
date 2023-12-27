@@ -180,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				87C9E8262B24FFB00024FE4F /* WineService.swift */,
-				8709A0672B236C74002C258E /* Assets.xcassets */,
 				87A758CB2B244DB000CEC20C /* links.swift */,
+				8709A0672B236C74002C258E /* Assets.xcassets */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

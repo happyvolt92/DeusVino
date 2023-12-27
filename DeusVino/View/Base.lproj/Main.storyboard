@@ -4,12 +4,11 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--camera-->
         <scene sceneID="0bc-Zt-Hwi">
             <objects>
                 <viewController id="S62-Vr-NKC" customClass="CameraViewController" customModule="DeusVino" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,19 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ9-GW-nvr">
-                                <rect key="frame" x="167" y="674" width="59" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ9-GW-nvr" userLabel="TakePictureButton">
+                                <rect key="frame" x="167" y="661" width="59" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="zz3-dg-vQf"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="camera.circle" catalog="system">
                                     <color key="baseForegroundColor" red="0.45245215309999998" green="0.041551870659999997" blue="0.057558531289999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="takePhotoButtonPressed:" destination="S62-Vr-NKC" eventType="touchUpInside" id="UIS-cd-48f"/>
+                                </connections>
                             </button>
+                            <textField userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Take a picture of the front of the bottle" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ano-Af-6U4" userLabel="textField">
+                                <rect key="frame" x="71.666666666666686" y="595" width="250" height="19"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OZv-4F-5Ib">
+                                <rect key="frame" x="51" y="217" width="291" height="310"/>
+                                <color key="tintColor" red="0.44738711120000002" green="0.03905114615" blue="0.049281695299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KLi-WJ-3ll"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OZv-4F-5Ib" firstAttribute="top" secondItem="KLi-WJ-3ll" secondAttribute="top" constant="158" id="88L-Kb-ymF"/>
+                            <constraint firstItem="ano-Af-6U4" firstAttribute="top" secondItem="OZv-4F-5Ib" secondAttribute="bottom" constant="68" id="8df-fU-OOc"/>
+                            <constraint firstItem="rJ9-GW-nvr" firstAttribute="centerX" secondItem="ano-Af-6U4" secondAttribute="centerX" id="9Us-Vm-sIM"/>
+                            <constraint firstItem="rJ9-GW-nvr" firstAttribute="leading" secondItem="KLi-WJ-3ll" secondAttribute="leading" constant="167" id="I5A-md-gcb"/>
+                            <constraint firstItem="rJ9-GW-nvr" firstAttribute="top" secondItem="ano-Af-6U4" secondAttribute="bottom" constant="47" id="J9d-hY-qLZ"/>
+                            <constraint firstItem="OZv-4F-5Ib" firstAttribute="leading" secondItem="KLi-WJ-3ll" secondAttribute="leading" constant="51" id="LOu-S1-GVA"/>
+                            <constraint firstItem="KLi-WJ-3ll" firstAttribute="bottom" secondItem="rJ9-GW-nvr" secondAttribute="bottom" constant="50" id="eES-xR-7hB"/>
+                            <constraint firstItem="rJ9-GW-nvr" firstAttribute="centerX" secondItem="OZv-4F-5Ib" secondAttribute="centerX" id="m2H-0r-aQ3"/>
+                            <constraint firstItem="rJ9-GW-nvr" firstAttribute="centerX" secondItem="hPG-rh-h2c" secondAttribute="centerX" id="mGi-1i-aFK"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="camera" catalog="system" id="5dy-yX-9Ew"/>
+                    <tabBarItem key="tabBarItem" title="camera" image="camera" catalog="system" selectedImage="camera" id="5dy-yX-9Ew">
+                        <color key="badgeColor" red="0.44738711120000002" green="0.03905114615" blue="0.049281695299999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="imageView" destination="OZv-4F-5Ib" id="MWT-IA-EaF"/>
+                        <outlet property="textField" destination="ano-Af-6U4" id="0aW-gT-aQA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz8-JH-tve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,15 +75,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-Zv-myh">
-                                <rect key="frame" x="-97" y="-14" width="163" height="264"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redgrapeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-BC-uhk">
+                                <rect key="frame" x="263" y="558" width="285" height="261"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="wZT-DE-Q4J"/>
+                                    <constraint firstAttribute="height" constant="261" id="EzG-BB-ED4"/>
+                                    <constraint firstAttribute="width" constant="285" id="aWj-zZ-LnR"/>
                                 </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redgrapeLeft" translatesAutoresizingMaskIntoConstraints="NO" id="GrE-BC-uhk">
-                                <rect key="frame" x="260" y="614" width="285" height="261"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Bacchus's Spirit Thrives" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc3-6v-re2">
                                 <rect key="frame" x="36" y="142" width="320.33333333333331" height="63"/>
@@ -119,24 +148,32 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-Zv-myh">
+                                <rect key="frame" x="-87" y="25" width="163" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="wZT-DE-Q4J"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sc-V8-eQV"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2Sc-V8-eQV" firstAttribute="bottom" secondItem="MhZ-Zv-myh" secondAttribute="bottom" constant="519" id="4To-dW-64b"/>
+                            <constraint firstItem="2Sc-V8-eQV" firstAttribute="bottom" secondItem="MhZ-Zv-myh" secondAttribute="bottom" constant="480" id="4To-dW-64b"/>
                             <constraint firstItem="2Sc-V8-eQV" firstAttribute="bottom" secondItem="9hF-E7-tUg" secondAttribute="bottom" constant="66" id="7MU-q8-PpP"/>
                             <constraint firstItem="9hF-E7-tUg" firstAttribute="trailing" secondItem="yQG-HE-dHG" secondAttribute="trailing" id="9Tx-GC-sw1"/>
+                            <constraint firstItem="GrE-BC-uhk" firstAttribute="leading" secondItem="9hF-E7-tUg" secondAttribute="trailing" constant="-82" id="ATC-g8-dOL"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="centerX" secondItem="Unl-qp-yT6" secondAttribute="centerX" id="GDG-RD-YAH"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="36" id="Gwm-fQ-G8L"/>
-                            <constraint firstItem="MhZ-Zv-myh" firstAttribute="leading" secondItem="cAt-Zd-Xo1" secondAttribute="leading" constant="-97" id="K2t-zI-ApA"/>
+                            <constraint firstItem="MhZ-Zv-myh" firstAttribute="leading" secondItem="cAt-Zd-Xo1" secondAttribute="leading" constant="-87" id="K2t-zI-ApA"/>
                             <constraint firstItem="9hF-E7-tUg" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="38" id="RsK-Dz-rBF"/>
                             <constraint firstItem="9hF-E7-tUg" firstAttribute="leading" secondItem="yQG-HE-dHG" secondAttribute="leading" id="YeD-Ct-3SG"/>
-                            <constraint firstItem="MhZ-Zv-myh" firstAttribute="top" secondItem="cAt-Zd-Xo1" secondAttribute="topMargin" constant="-73" id="ZpN-qb-BBr"/>
+                            <constraint firstItem="MhZ-Zv-myh" firstAttribute="top" secondItem="cAt-Zd-Xo1" secondAttribute="topMargin" constant="-34" id="ZpN-qb-BBr"/>
                             <constraint firstItem="Unl-qp-yT6" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="84.000000000000014" id="fTx-E8-HxF"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="36" id="fcN-3B-iaB"/>
                             <constraint firstItem="yQG-HE-dHG" firstAttribute="leading" secondItem="2Sc-V8-eQV" secondAttribute="leading" constant="38" id="gbe-d6-8lp"/>
-                            <constraint firstItem="Unl-qp-yT6" firstAttribute="leading" secondItem="MhZ-Zv-myh" secondAttribute="trailing" constant="18" id="ktk-2O-Mf4"/>
+                            <constraint firstItem="Unl-qp-yT6" firstAttribute="leading" secondItem="MhZ-Zv-myh" secondAttribute="trailing" constant="8.0000000000000142" id="ktk-2O-Mf4"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="top" secondItem="2Sc-V8-eQV" secondAttribute="top" constant="83" id="owZ-B2-nuM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="GrE-BC-uhk" secondAttribute="bottom" constant="-50" id="q5j-kR-0sa"/>
                             <constraint firstItem="9hF-E7-tUg" firstAttribute="top" secondItem="yQG-HE-dHG" secondAttribute="bottom" constant="25.666666666666686" id="sHx-0b-Eb3"/>
                             <constraint firstItem="vc3-6v-re2" firstAttribute="top" secondItem="Unl-qp-yT6" secondAttribute="bottom" constant="-21" id="zXm-lq-Bt4"/>
                         </constraints>
@@ -161,6 +198,8 @@
                                     <constraint firstAttribute="width" constant="346" id="SNc-Xf-avM"/>
                                     <constraint firstAttribute="height" constant="56" id="Zwe-XI-SJm"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="fYT-VB-DIf" id="EN5-7H-VGR"/>
@@ -223,7 +262,7 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grapedown right" translatesAutoresizingMaskIntoConstraints="NO" id="Waf-pv-9Lf">
-                                <rect key="frame" x="215" y="49" width="201" height="111"/>
+                                <rect key="frame" x="237" y="49" width="201" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="201" id="Ccc-oy-vV0"/>
                                 </constraints>
@@ -232,7 +271,7 @@
                         <viewLayoutGuide key="safeArea" id="bGr-hD-sym"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Waf-pv-9Lf" firstAttribute="leading" secondItem="Gsx-ep-i4U" secondAttribute="leading" constant="-66" id="10B-iZ-eJK"/>
+                            <constraint firstItem="Waf-pv-9Lf" firstAttribute="leading" secondItem="Gsx-ep-i4U" secondAttribute="leading" constant="-44" id="10B-iZ-eJK"/>
                             <constraint firstItem="x2N-gO-2ua" firstAttribute="top" secondItem="bGr-hD-sym" secondAttribute="top" constant="18" id="9bk-8g-Prh"/>
                             <constraint firstItem="0m7-Bo-S1w" firstAttribute="top" secondItem="yxI-jq-LyJ" secondAttribute="bottom" constant="23" id="Exq-uc-Npa"/>
                             <constraint firstItem="yxI-jq-LyJ" firstAttribute="leading" secondItem="bGr-hD-sym" secondAttribute="leading" constant="16" id="Gg2-33-qLj"/>
@@ -297,8 +336,5 @@
         <image name="iconcavesmall" width="81" height="77"/>
         <image name="laura-landers-6GytU-cqOYU-unsplash-removebg-preview-removebg-preview" width="408" height="612"/>
         <image name="redgrapeLeft" width="408" height="612"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
